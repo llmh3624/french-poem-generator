@@ -6,7 +6,6 @@
     <title>French Poem Generator</title>
     <link rel="stylesheet" href="src/styles.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
@@ -14,21 +13,23 @@
       <h1>AI French Poem Generator</h1>
     </header>
     <main>
-      
-      <form id="poem-generator-form">
-        <input
-          type="text"
-          placeholder="Enter the topic of the French poem"
-          autofocus
-          required
-          autocomplete="off"
-          class="instructions"
-          id="user-instructions"
-        />
-        <input type="submit" class="submit-button" id="submit-button" />
-      </form>
+      <div class="form-container">
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the French poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="example">i.e Flowers, Croissant, Paris...</div>
+      </div>
+      <div id="poem" class="hidden"></div>
     </main>
-    <div id="poem" class="poem hidden"></div>
     <footer>
       This AI project was coded by
       <a href="" target="" _blank>Laura Moragues</a> and is
